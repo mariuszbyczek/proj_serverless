@@ -1,0 +1,11 @@
+S3 Bucket jest usługą przechowywania danych w AWS.
+
+Zalety:
+    -niskie koszty
+    -rozwiązania łatwe w implementacji
+
+Wady:
+    -niższa wydajność od konkurencji
+    -bezpieczeństwo
+
+Rozwiązanie Azure jest lepsze w przypadku dużych firm zaś S3 w małych projektach.
