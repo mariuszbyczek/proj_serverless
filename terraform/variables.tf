@@ -1,6 +1,6 @@
 variable "bucketName" {
   type    = string
-  default = "my-bucket"
+  default = "Mariusz_75910"
 }
 
 variable "objectKey" {
