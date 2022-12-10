@@ -1,21 +1,18 @@
-
-output "bucket_name" {
-  value = aws_s3_bucket.my-bucket.id
-  description = "ID of buccket"
-  
+output "arn" {
+  description = "ARN of the bucket"
+  value       = aws_s3_bucket.s3_bucket.arn
 }
 
-output "bucket_domain_name" {
-  value       = aws_s3_bucket.my-bucket.*.bucket_domain_name
-  description = "FQDN of bucket"
+output "name" {
+  description = "Name (id) of the bucket"
+  value       = aws_s3_bucket.s3_bucket.id
 }
 
-output "bucket_website_endpoint" {
-  value       = aws_s3_bucket_website_configuration.my-bucket.*.website_endpoint
-  description = "The bucket website endpoint, if website is enabled"
+output "domain" {
+  description = "Domain name of the bucket"
+  value       = aws_s3_bucket_website_configuration.s3_bucket.website_domain
 }
 
-output "bucket_arn" {
-  value       = aws_s3_bucket.my-bucket.*.arn
-  description = "Bucket ARN"
+output "website_endpoint" {
+  value = aws_s3_bucket_website_configuration.s3_bucket.website_endpoint
 }
